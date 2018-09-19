@@ -1,8 +1,11 @@
 ﻿using System;
 using models.Jezyk;
 using models.Kontenery;
+using models.Dziedziczenie;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace elektytk
+namespace elektryk
 {
     class Program
     {
@@ -11,6 +14,8 @@ namespace elektytk
             // =============================================================
             //                        Hello World!
             // =============================================================
+
+            
             
             Console.Clear();
 
@@ -43,7 +48,7 @@ namespace elektytk
             // Jezyk.KonteneryPetle();
             // Kontener.Tablice();
             // Kontener.KontenerList();
-            Kontener.KontenerDictionary();
+            // Kontener.KontenerDictionary();
             // Kontener.KontenerQueue();
             // Kontener.KontenerStack();
 
@@ -51,9 +56,9 @@ namespace elektytk
             //                   Programowanie obiektowe
             // =============================================================
             
-            // Jezyk.Klasy();
-            // Jezyk.Polimorfizm();
-            // Jezyk.Interfejsy();
+            Obiektowo.Klasy();
+            // Obiektowo.Polimorfizm();
+            // Obiektowo.Interfejsy();
 
             // =============================================================
             //                        Zaawansowane     
@@ -75,7 +80,7 @@ namespace elektytk
             // Jezyk.Watki();
 
             // Więcej o języku C#
-            // https://4programmers.net/C_sharp
+            // https://4programmers.net/C_sharp 
         }
     }
 }

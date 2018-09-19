@@ -1,0 +1,10 @@
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/bin/Debug/netcoreapp2.0/kurs-csharp.deps.json
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/bin/Debug/netcoreapp2.0/kurs-csharp.runtimeconfig.json
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/bin/Debug/netcoreapp2.0/kurs-csharp.runtimeconfig.dev.json
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/bin/Debug/netcoreapp2.0/kurs-csharp.dll
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/bin/Debug/netcoreapp2.0/kurs-csharp.pdb
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/obj/Debug/netcoreapp2.0/kurs-csharp.csproj.CoreCompileInputs.cache
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/obj/Debug/netcoreapp2.0/kurs-csharp.AssemblyInfoInputs.cache
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/obj/Debug/netcoreapp2.0/kurs-csharp.AssemblyInfo.cs
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/obj/Debug/netcoreapp2.0/kurs-csharp.dll
+/home/eker/Dokumenty/PWSZ/Sem 6/Kryptografia i teoria kodów/kurs/kurs-csharp/obj/Debug/netcoreapp2.0/kurs-csharp.pdb

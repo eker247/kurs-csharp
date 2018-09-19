@@ -1,5 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
+using System.Text;
+
 namespace models.Dziedziczenie
 {
     static public class Obiektowo
@@ -10,16 +15,34 @@ namespace models.Dziedziczenie
         }
         static public void Klasy()
         {
-            // Console.WriteLine("Klasy...");
-            // var klasa = new Klasa("moje pole", 14);
-            // Console.WriteLine($"Pole: {klasa.Pole}, atrybut: {klasa.Atrybut}");
-            // // klasa.Pole = "aaa";
-            // klasa.setPole("zmienione świadomie");
-            // Console.WriteLine($"Pole: {klasa.Pole}, atrybut: {klasa.Atrybut}");
+            // var users = new List<User>();
+            // users.Add(new User("Adam", "adam@email.com"));
+            // users.Add(new User("Bartek", "bartek@email.com"));
+            // users.Add(new User("Czesław", "czesio_nie_lubi_email"));
 
-            Kolo kolo = new Kolo(4, 8, 12);
-            kolo.Show();
-            Console.WriteLine(kolo.srednica);
+            // foreach (var u in users) {
+            //     var correct = u.checkEmail() ? "" : "nie";
+            //     Console.WriteLine($"Użytkownik {u.name} posiada adres {u.email}, który jest {correct}prawidłowy.");
+            // }
+            
+            // var writer = System.IO.File.AppendText("plik.txt");
+            // writer.WriteLine("hello file");
+            // writer.Close();
+
+            var emails = System.IO.File.ReadLines("plik.txt");
+            var userList = new List<User>();
+            foreach (var e in emails)
+            {
+                userList.Add(new User("", e));
+            }
+
+            foreach (var u in userList)
+            {
+                var correct = u.checkEmail() ? "" : "nie";
+                Console.WriteLine($"Użytkownik {u.name} posiada adres {u.email}, który jest {correct}prawidłowy.");
+            }
+            
+            
         }
 
         static public void DziedziczenieWielokrotne()
@@ -36,6 +59,27 @@ namespace models.Dziedziczenie
             d.Show();
         }
     }
+
+    class User
+    {
+        public string name { get; private set; }
+        public string email { get; private set; }
+
+        public User(string n = "", string e = "")
+        {
+            name = n;
+            email = e;
+        }
+
+        public bool checkEmail()
+        {
+            return email != null && Regex.IsMatch(email, @"[^.@][^@]*@[^.@]+\.[^.@]+");
+        }
+    }
+
+
+
+
 
     class Kalkulator
     {
@@ -88,26 +132,29 @@ namespace models.Dziedziczenie
         // zabezpieczyć przed wprowadzaniem błędnych danych
         // takie podejście jest możliwe ale jego użycie zależy od zespołu, który pracuje
         // nad aplikacją
-        public int Atrybut
-        {
-            get { return Atrybut - 100; }
-            set 
-            { 
-                if (value < 100)
-                {
-                    Atrybut = 100;
-                } 
-                else
-                {
-                    Atrybut = value;
-                }
-            }
-        }
-        public Klasa(string p, int a)
+        protected int Atrybut;
+
+        public Klasa(string p = "nic", int a = 2)
         {
             Pole = p;
             Atrybut = a;
         }
+
+        public void setAtrybut(int x) {
+            if (x > 0) 
+            {
+                Atrybut = x;
+            }
+            else
+            {
+                Atrybut = 0;
+            }
+        }
+
+        public int getAtrybut() {
+            return Atrybut;
+        }
+
         public void setPole(string s)
         {
             Pole = s;

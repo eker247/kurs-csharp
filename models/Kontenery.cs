@@ -161,7 +161,7 @@ namespace models.Kontenery
             queuePunkt.Enqueue(0);
             queuePunkt.Enqueue(1);
             queuePunkt.Enqueue(2);
-            queuePunkt.Enqueue(3);
+            queuePunkt.Enqueue(8);
             queuePunkt.Enqueue(4);
             
             // for (int i = 0; i < queuePunkt.Count(); ++i)
@@ -169,19 +169,23 @@ namespace models.Kontenery
             //     queuePunkt.ElementAt(i).Show();
             // }
 
-            Console.WriteLine("Metoda Peek()");
-            Console.WriteLine(queuePunkt.Peek());
-            Console.WriteLine(queuePunkt.Peek());
-            Console.WriteLine(queuePunkt.Peek());
-            Console.WriteLine($"Rozmiar kolejki: {queuePunkt.Count()}");
+            // Console.WriteLine("Metoda Peek()");
+            // Console.WriteLine(queuePunkt.Peek());
+            // Console.WriteLine(queuePunkt.Peek());
+            // Console.WriteLine(queuePunkt.Peek());
+            // Console.WriteLine($"Rozmiar kolejki: {queuePunkt.Count()}");
 
-            Console.WriteLine("Metodda Peek()");
-            Console.WriteLine(queuePunkt.Peek());
-            Console.WriteLine(queuePunkt.Peek());
-            Console.WriteLine(queuePunkt.Peek());
-            Console.WriteLine($"Rozmiar kolejki: {queuePunkt.Count()}");
-            
+            // Console.WriteLine("Metodda Peek()");
+            // Console.WriteLine(queuePunkt.Peek());
+            // Console.WriteLine(queuePunkt.Peek());
+            // Console.WriteLine(queuePunkt.Peek());
+            // Console.WriteLine($"Rozmiar kolejki: {queuePunkt.Count()}");
+
             Console.WriteLine("Metoda Dequeue()");
+            Console.WriteLine(queuePunkt.Dequeue());
+            Console.WriteLine(queuePunkt.Dequeue());
+            Console.WriteLine(queuePunkt.Dequeue());
+            Console.WriteLine(queuePunkt.Dequeue());
             Console.WriteLine(queuePunkt.Dequeue());
             Console.WriteLine(queuePunkt.Dequeue());
             Console.WriteLine(queuePunkt.Dequeue());
@@ -199,7 +203,7 @@ namespace models.Kontenery
             stackPunkt.Push("jeden");
             stackPunkt.Push("dwa");
             stackPunkt.Push("trzy");
-            while (stackPunkt.Count() > 0)
+            while (stackPunkt.Count() > -2)
             {   
                 Console.WriteLine(stackPunkt.Peek());
                 stackPunkt.Pop();
